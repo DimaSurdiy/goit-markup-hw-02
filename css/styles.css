@@ -1,0 +1,116 @@
+/* Палитра цветов текста:
+основной цвет текста: #757575
+вторичный цвет текста: #212121
+цвет акцента: #2196F3
+чёрный цвет: #000000
+белый цвет: #ffffff
+белый прозначный цвет: rgba(255, 255, 255, 0.6) */
+
+/* Палитра цветов фона:
+белый фон: #ffffff;
+фон секции герой и футера: #2F303A
+фон секции команда: #F5F4FA */
+
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --white-alpha-color: rgba(255, 255, 255, 0.6);
+
+  --bg-dark-color: #2f303a;
+  --bg-grey-color: #f5f4fa;
+}
+
+body {
+  color: var(--main-text-color);
+}
+
+/* Шапка сайта */
+.page-header {
+  background-color: var(--white-color);
+}
+
+/* Логотип */
+.logo {
+  color: var(--black-color);
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+/* Навигация сайта */
+.nav-list .link {
+  color: var(--title-text-color);
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* Контакты */
+.contacts-item {
+  color: inherit;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+
+/* Секция герой */
+.hero {
+  background-color: var(--bg-dark-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* Секция особенности */
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* Секция чем мы занимаемся */
+.about-title {
+  color: var(--title-text-color);
+}
+
+/* Секция наша команда */
+.team {
+  background-color: var(--bg-grey-color);
+}
+
+.team-title {
+  color: var(--title-text-color);
+}
+
+.team-list .name {
+  color: var(--title-text-color);
+}
+
+/* Футер сайта */
+.page-footer {
+  background-color: var(--bg-dark-color);
+}
+
+.footer-logo {
+  color: var(--white-color);
+}
+
+.footer-contacts .map {
+  color: var(--white-color);
+}
+
+.footer-contacts-item {
+  color: var(--white-alpha-color);
+}
